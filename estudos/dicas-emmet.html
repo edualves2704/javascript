@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    main.container>h1[style="text-align:center"]{Título da Página}
+
+    <main class="container">
+        <h1 style="text-align:center">Título da Página</h1>
+    </main>
+    
+
+    article.cartao>h2.csrta__titulo{título do cartão}
+    <article class="cartao">
+        <h2 class="csrta__titulo">título do cartão</h2>
+    </article>
+
+    <article class="cartao">
+        <h2 class="csrta__titulo">Título H2</h2>
+        <h3 class="cartao__subtitulo">Título H3</h3>
+        <p>conteúdo do cartão</p>
+    </article>
+
+    <!-- [] : permite definir atributos do elemento html -->
+    <!-- {} : permite definir o texto que ficará dentro da tag -->
+    <!-- . : estabelece as classes associadas à tag. -->
+    <!-- se colocar o ponto sem definir uma tag antes, a tag padrão será a div -->
+    <!-- + : insere um novo elemento html no mesmo nível do elemento inicial -->
+    <!-- > : insere um novo elemento html no nível inferior ao elemento que o antecede -->
+    <!-- () : agrupa conjunto de elementos de forma a estruturar o código em níveis-->
+
+    article.csrtao-imagem>img[src="#" alt="Imagem"]+(.cartao-imagem__container>p{conteúdo do cartão})+.cartao-imagem__container>p{conteúdo do cartão 2}
+    <article class="csrtao-imagem">
+        <img src="#" alt="Imagem">
+        <div class="cartao-imagem__container">
+            <p>conteúdo do cartão</p>
+        </div>
+    </article>
+
+    <!-- () : agrupa conjunto de elementos de forma a estruturar o código em níveis-->
+    article.csrtao-imagem>(.cartao-imagem__container>p{conteúdo do cartão})+img[src="#" alt="Imagem"]
+    <article class="csrtao-imagem">
+        <div class="cartao-imagem__container">
+            <p>conteúdo do cartão</p>
+        </div>
+        <img src="#" alt="Imagem">
+    </article>
+
+    <!-- * : repete um elemento html x vezes-->
+    ul>li{item}*8
+    <ul>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+    </ul>
+
+    <!-- $ : associado ao *, permite obter o número do elemento a ser repetido-->
+    ul>li{item nº $}*5
+    <ul>
+        <l>item nº 1</l>
+        <l>item nº 2</l>
+        <l>item nº 3</l>
+        <l>item nº 4</l>
+        <l>item nº 5</l>
+    </ul>
+    ul>li[data-item="item-$"]{item nº $}*5
+    <ul>
+        <li class="item" data-item="1">item nº 1</li>
+        <li class="item" data-item="2">item nº 2</li>
+        <li class="item" data-item="3">item nº 3</li>
+        <li class="item" data-item="4">item nº 4</li>
+        <li class="item" data-item="5">item nº 5</li>
+    </ul>
+
+    https://cursos.alura.com.br/extra/alura-mais/emmet-instalacao-e-comandos-no-atom-c311
+
+    Link para o site do EMMET: https://emmet.io/
+
+    Link para a documentação do EMMET (em inglês): https://docs.emmet.io/
+    
+    E caso você queira uma lista completa de todos os atalhos e sintaxes do EMMET, o link do cheat sheet do EMMET: https://docs.emmet.io/cheat-sheet/
+
+ 
+
+</body>
+</html>
